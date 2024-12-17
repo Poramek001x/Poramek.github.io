@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore the World</title>
+    <title>My Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,16 +12,16 @@
             box-sizing: border-box;
         }
         header {
-            background: #4CAF50;
+            background: #333;
             color: white;
             padding: 20px;
             text-align: center;
         }
         nav {
-            background: #333;
-            padding: 10px;
+            background: #555;
             display: flex;
             justify-content: center;
+            padding: 10px;
         }
         nav a {
             color: white;
@@ -32,7 +32,7 @@
             text-decoration: underline;
         }
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?travel,nature') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/1600x900/?coding,tech') no-repeat center center/cover;
             height: 400px;
             display: flex;
             justify-content: center;
@@ -46,7 +46,10 @@
         .container {
             padding: 20px;
         }
-        .destination {
+        .about, .projects, .contact {
+            margin-bottom: 40px;
+        }
+        .projects {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -81,38 +84,48 @@
 </head>
 <body>
     <header>
-        <h1>Explore the World</h1>
+        <h1>Welcome to My Portfolio</h1>
     </header>
     <nav>
-        <a href="#destinations">Destinations</a>
-        <a href="#about">About Us</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="hero">
-        <h1>Your Adventure Awaits</h1>
+        <h1>Building Ideas into Reality</h1>
     </div>
-    <div class="container" id="destinations">
-        <h2>Top Destinations</h2>
-        <div class="destination">
+    <div class="container" id="about">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi, I’m a passionate developer with experience in building web applications and creating engaging user experiences. I love turning ideas into functional and beautiful designs.</p>
+        </section>
+        <section class="projects" id="projects">
+            <h2>My Projects</h2>
             <div class="card">
-                <img src="https://source.unsplash.com/300x200/?paris,eiffel" alt="Paris">
-                <h3>Paris, France</h3>
-                <p>Experience the romance and charm of the City of Light.</p>
+                <img src="https://source.unsplash.com/300x200/?code,project" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A web application designed for task management with user-friendly features.</p>
             </div>
             <div class="card">
-                <img src="https://source.unsplash.com/300x200/?bali,beach" alt="Bali">
-                <h3>Bali, Indonesia</h3>
-                <p>Relax on stunning beaches and immerse in vibrant culture.</p>
+                <img src="https://source.unsplash.com/300x200/?design,project" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>An interactive portfolio showcasing creative designs and animations.</p>
             </div>
             <div class="card">
-                <img src="https://source.unsplash.com/300x200/?newyork,city" alt="New York">
-                <h3>New York, USA</h3>
-                <p>Discover the iconic landmarks of the Big Apple.</p>
+                <img src="https://source.unsplash.com/300x200/?tech,project" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>A responsive e-commerce platform built for seamless user experience.</p>
             </div>
-        </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>If you’d like to work together or have any questions, feel free to reach out!</p>
+            <p>Email: <a href="mailto:example@domain.com">example@domain.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/username</a></p>
+        </section>
     </div>
     <footer>
-        <p>&copy; 2024 Explore the World. All Rights Reserved.</p>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
